@@ -39,11 +39,17 @@
               },
               {
                 "glob": "**/*",
-                "input": "src/assets", 
+                "input": "src/assets",
                 "output": "/assets"
+              },
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
+                "output": "/assets/"
               }
             ],
             "styles": [
+              "src/theme.less",
               "src/styles.scss",
               "node_modules/ngx-toastr/toastr.css"
             ],
@@ -75,7 +81,7 @@
         },
         "serve": {
           "options": {
-          "port": 5001
+          "port": 5004
         },
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {

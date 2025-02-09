@@ -1,0 +1,50 @@
+nz-header {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background: #001529;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1890ff; /* NG-ZORRO asosiy rang */
+  margin: 0;
+}
+
+.logo h1 span {
+  color: #ff4d4f; /* Farqli rang */
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  nz-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .menu li {
+    flex: 1;
+    text-align: center;
+  }
+}

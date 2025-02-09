@@ -1,1 +1,20 @@
-<p>home works!</p>
+<div class="container">
+  <nz-carousel nzAutoPlay nzEffect="fade" [nzDotPosition]="'bottom'">
+    <div nz-carousel-content *ngFor="let banner of banners" class="carousel-slide">
+      <img [src]="banner.image" alt="{{ banner.title }}" class="carousel-image" />
+      <h3 class="carousel-title">{{ banner.title }}</h3>
+    </div>
+  </nz-carousel>
+
+  <br>
+  <br>
+
+  <div nz-row [nzGutter]="16">
+    <div nz-col [nzSpan]="6" *ngFor="let book of books">
+      <nz-card nzHoverable class="book-card">
+        <img nz-card-cover [src]="book.coverImageUrl" alt="{{ book.title }}" class="book-cover" />
+        <nz-card-meta [nzTitle]="book.title" [nzDescription]="book.author"></nz-card-meta>
+      </nz-card>
+    </div>
+  </div>
+</div>

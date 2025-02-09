@@ -1,0 +1,40 @@
+/* Carousel uchun uslublar */
+
+.carousel-slide {
+  position: relative;
+  text-align: center;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-title {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Kitob kartalari uchun uslublar */
+.book-card {
+  margin-bottom: 16px;
+}
+
+.book-cover {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 500px; /* Banner balandligini oshirdik */
+  object-fit: cover;
+}
