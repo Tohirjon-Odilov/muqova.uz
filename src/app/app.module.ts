@@ -19,6 +19,7 @@ import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { FormsModule } from '@angular/forms';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import {PosthogService} from "./posthog.service";
 
 registerLocaleData(en);
 
@@ -59,6 +60,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     FormsModule
   ],
   providers: [
+    PosthogService,
     { provide: NZ_I18N, useValue: en_US },
     provideAnimationsAsync(),
     provideHttpClient()
